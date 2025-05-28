@@ -78,28 +78,76 @@ const Traction = () => {
           </p>
         </motion.div>
 
-        {/* Stats */}
+        {/* Project Timeline */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+          className="mb-20"
         >
-          {stats.map((stat, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-              className="bg-gray-50 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow duration-300"
-            >
-              <div className="text-4xl font-bold text-purple-700 mb-2">
-                {stat.value}
+          <h3 className="text-2xl font-bold text-center mb-12">
+            Project Timeline
+          </h3>
+
+          <div className="relative bg-gray-100 rounded-2xl p-6 overflow-hidden">
+            {/* Timeline line */}
+            <div className="absolute top-1/2 left-6 right-6 h-1 bg-purple-700 z-0 transform -translate-y-1/2"></div>
+
+            {/* Larger Floating Map Pin */}
+            <div className="absolute top-[calc(60%-60px)] left-[25%] transform -translate-x-1/2 z-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-10 h-10 fill-black drop-shadow-lg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2C8.13401 2 5 5.13401 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13401 15.866 2 12 2ZM12 11.5C10.6193 11.5 9.5 10.3807 9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C13.3807 6.5 14.5 7.61929 14.5 9C14.5 10.3807 13.3807 11.5 12 11.5Z" />
+              </svg>
+            </div>
+
+            {/* Milestones */}
+            <div className="relative z-10 flex justify-between items-center text-center">
+              {/* Dev */}
+              <div className="flex flex-col items-center w-1/5">
+                <div className="w-4 h-4 bg-black rounded-full border-2 border-white mb-2"></div>
+                <span className="text-sm font-semibold">Dev</span>
               </div>
-              <div className="text-lg font-semibold mb-1">{stat.label}</div>
-              <div className="text-gray-600 text-sm">{stat.description}</div>
-            </motion.div>
-          ))}
+
+              {/* Launch */}
+              <div className="flex flex-col items-center w-1/5">
+                <div className="w-4 h-4 bg-purple-600 rounded-full mb-2"></div>
+                <span className="text-sm font-semibold">Launch</span>
+              </div>
+
+              {/* Year 1 */}
+              <div className="flex flex-col items-center w-1/5">
+                <div className="w-4 h-4 bg-purple-700 rounded-full mb-2"></div>
+                <div className="bg-purple-700 text-white px-3 py-1 text-xs rounded-md shadow-md mb-2">
+                  <strong>Year 1</strong>
+                  <br />1 Cold Storage
+                </div>
+              </div>
+
+              {/* Year 2 */}
+              <div className="flex flex-col items-center w-1/5">
+                <div className="w-4 h-4 bg-purple-800 rounded-full mb-2"></div>
+                <div className="bg-purple-800 text-white px-3 py-1 text-xs rounded-md shadow-md mb-2">
+                  <strong>Year 2</strong>
+                  <br />
+                  3–5 Cold Storages
+                </div>
+              </div>
+
+              {/* Year 3 */}
+              <div className="flex flex-col items-center w-1/5">
+                <div className="w-4 h-4 bg-black rounded-full mb-2"></div>
+                <div className="bg-black text-white px-3 py-1 text-xs rounded-md shadow-md mb-2">
+                  <strong>Year 3</strong>
+                  <br />
+                  Expand to other region
+                </div>
+              </div>
+            </div>
+          </div>
         </motion.div>
 
         {/* Supported By Section */}
@@ -142,8 +190,8 @@ const Traction = () => {
             </div>
           </div>
         </motion.div>
-
-        {/* Testimonials */}
+        {/* 
+        Testimonials
         <h3 className="text-2xl font-bold text-center mb-8">
           What Our Clients Say
         </h3>
@@ -158,7 +206,7 @@ const Traction = () => {
               rating={testimonial.rating}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

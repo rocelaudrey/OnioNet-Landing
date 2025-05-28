@@ -111,10 +111,19 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
-
-              <br />
-              <br />
-              <br />
+              <h3 className="text-lg font-semibold mt-6">Find Us</h3>
+              <div className="mt-2 rounded-lg overflow-hidden shadow-sm">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3816.7651248015773!2d121.76212317471484!3d16.936874215628038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3385515a297d2421%3A0xe175be2e1e169714!2sBIRD%20C!5e0!3m2!1sen!2sph!4v1748443164438!5m2!1sen!2sph"
+                  width="100%"
+                  height="205"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="OnioNet Office Map"
+                ></iframe>
+              </div>
             </div>
           </motion.div>
 
@@ -125,20 +134,20 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold mb-8 text-center">Founders</h3>
+              <h3 className="text-2xl font-bold mb-8">Founders</h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 justify-items-center">
                 {/* Founder Card */}
                 <div className="relative w-[180px]">
                   <img
-                    src="/src/assets/ken.png"
+                    src="/src/assets/ken.jpg"
                     alt="Ken Quiambao"
                     className="rounded-xl shadow-md w-full"
                   />
-                  <span className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-sm text-gray-800 px-2 py-1 rounded-l font-medium shadow">
+                  <span className="absolute right-0 bottom-12 bg-white text-sm text-gray-800 px-2 py-1 rounded-l font-medium shadow">
                     Project Lead
                   </span>
-                  <p className="mt-4 text-center font-semibold">Ken Quiambao</p>
+                  <p className="mt-6 text-center font-semibold">Ken Quiambao</p>
                 </div>
 
                 <div className="relative w-[180px]">
@@ -147,7 +156,7 @@ const Contact = () => {
                     alt="Jericho Pineda"
                     className="rounded-xl shadow-md w-full"
                   />
-                  <span className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-sm text-gray-800 px-2 py-1 rounded-l font-medium shadow">
+                  <span className="absolute right-0 bottom-12 bg-white text-sm text-gray-800 px-2 py-1 rounded-l font-medium shadow">
                     Developer
                   </span>
                   <p className="mt-4 text-center font-semibold">
@@ -161,7 +170,7 @@ const Contact = () => {
                     alt="MC Osmund Espejo"
                     className="rounded-xl shadow-md w-full"
                   />
-                  <span className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-sm text-gray-800 px-2 py-1 rounded-l font-medium shadow">
+                  <span className="absolute right-0 bottom-10 bg-white text-sm text-gray-800 px-2 py-1 rounded-l font-medium shadow">
                     Developer
                   </span>
                   <p className="mt-4 text-center font-semibold">
@@ -175,7 +184,7 @@ const Contact = () => {
                     alt="Rocel Batara"
                     className="rounded-xl shadow-md w-full"
                   />
-                  <span className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-sm text-gray-800 px-2 py-1 rounded-l font-medium shadow">
+                  <span className="absolute right-0 bottom-10 bg-white text-sm text-gray-800 px-2 py-1 rounded-l font-medium shadow">
                     Adviser
                   </span>
                   <p className="mt-4 text-center font-semibold">Rocel Batara</p>
