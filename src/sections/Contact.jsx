@@ -140,7 +140,7 @@ const Contact = () => {
                 {/* Founder Card */}
                 <div className="relative w-[180px]">
                   <img
-                    src="/src/assets/ken.jpg"
+                    src="/assets/ken.jpg"
                     alt="Ken Quiambao"
                     className="rounded-xl shadow-md w-full"
                   />
@@ -152,7 +152,7 @@ const Contact = () => {
 
                 <div className="relative w-[180px]">
                   <img
-                    src="/src/assets/jericho.png"
+                    src="/assets/jericho.png"
                     alt="Jericho Pineda"
                     className="rounded-xl shadow-md w-full"
                   />
@@ -166,7 +166,7 @@ const Contact = () => {
 
                 <div className="relative w-[180px]">
                   <img
-                    src="/src/assets/mc.png"
+                    src="/assets/mc.png"
                     alt="MC Osmund Espejo"
                     className="rounded-xl shadow-md w-full"
                   />
@@ -180,7 +180,7 @@ const Contact = () => {
 
                 <div className="relative w-[180px]">
                   <img
-                    src="/src/assets/rocel.png"
+                    src="/assets/rocel.png"
                     alt="Rocel Batara"
                     className="rounded-xl shadow-md w-full"
                   />

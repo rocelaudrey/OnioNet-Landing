@@ -187,7 +187,7 @@ const About = () => {
                 viewport={{ once: true }}
               >
                 <img
-                  src="/src/assets/tag.png"
+                  src="/assets/tag.png"
                   alt="Tagging system"
                   className="w-full h-auto mb-4"
                 />
@@ -207,7 +207,7 @@ const About = () => {
                 viewport={{ once: true }}
               >
                 <img
-                  src="/src/assets/track.png"
+                  src="/assets/track.png"
                   alt="Tracking system"
                   className="w-full h-auto mb-4"
                 />
@@ -227,7 +227,7 @@ const About = () => {
                 viewport={{ once: true }}
               >
                 <img
-                  src="/src/assets/thrive.png"
+                  src="/assets/thrive.png"
                   alt="Thrive with analytics"
                   className="w-full h-auto mb-4"
                 />
@@ -249,7 +249,7 @@ const About = () => {
           </h2>
           <p className="text-gray-600">
             Each feature is designed to simplify your workflow and maximize your
-            storage’s potential — from real-time tracking to automated
+            storage's potential — from real-time tracking to automated
             reporting.
           </p>
         </div>

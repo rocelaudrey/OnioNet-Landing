@@ -43,7 +43,7 @@ const Hero = () => {
           >
             <div className="relative">
               <img
-                src="/src/assets/hero.JPG"
+                src="/assets/hero.jpg"
                 alt="OnioNet Tracking Interface"
                 className="w-full max-w-xl rounded-lg shadow-lg object-cover"
               />
