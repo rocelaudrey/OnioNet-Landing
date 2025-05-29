@@ -72,9 +72,10 @@ const Traction = () => {
             Our <span className="text-purple-700">Traction</span>
           </h2>
           <p className="section-subtitle">
-            OnioNet is trusted by leading storage facilities and agricultural
-            businesses across the country. See the difference we're making in
-            the industry.
+            As we prepare for launch, OnioNet has already gained the trust of
+            cold storage operators, farmer cooperatives, and innovation grant
+            programs. We're turning real problems into real solutions—with
+            support from the ground up.
           </p>
         </motion.div>
 

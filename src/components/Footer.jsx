@@ -1,54 +1,41 @@
-import React from 'react';
-import { FiGithub, FiTwitter, FiLinkedin, FiFacebook } from 'react-icons/fi';
-import Logo from './Logo';
+import React from "react";
+import { FiGithub, FiTwitter, FiLinkedin, FiFacebook } from "react-icons/fi";
+import Logo from "./Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   const footerLinks = [
     {
-      title: 'Company',
-      links: [
-        { name: 'About', href: '#about' },
-        { name: 'Careers', href: '#' },
-        { name: 'Blog', href: '#' },
-        { name: 'Press', href: '#' }
-      ]
+      title: "Company",
+      links: [{ name: "About", href: "#about" }],
     },
     {
-      title: 'Solutions',
+      title: "Solutions",
       links: [
-        { name: 'Tagging System', href: '#' },
-        { name: 'Tracking Software', href: '#' },
-        { name: 'Analytics Dashboard', href: '#' },
-        { name: 'Storage Optimization', href: '#' }
-      ]
+        { name: "Tagging System" },
+        { name: "Tracking Software" },
+        { name: "Cold Storage Insights" },
+        { name: "Inventory Visibility" },
+      ],
     },
     {
-      title: 'Resources',
-      links: [
-        { name: 'Case Studies', href: '#' },
-        { name: 'Documentation', href: '#' },
-        { name: 'Support', href: '#' },
-        { name: 'API', href: '#' }
-      ]
+      title: "Resources",
+      links: [{ name: "Support", href: "#" }],
     },
     {
-      title: 'Legal',
-      links: [
-        { name: 'Privacy Policy', href: '#' },
-        { name: 'Terms of Service', href: '#' },
-        { name: 'Security', href: '#' },
-        { name: 'Compliance', href: '#' }
-      ]
-    }
+      title: "Legal",
+      links: [{ name: "Privacy Policy" }],
+    },
   ];
 
   const socialLinks = [
-    { name: 'Twitter', icon: <FiTwitter size={20} />, href: '#' },
-    { name: 'LinkedIn', icon: <FiLinkedin size={20} />, href: '#' },
-    { name: 'Facebook', icon: <FiFacebook size={20} />, href: '#' },
-    { name: 'GitHub', icon: <FiGithub size={20} />, href: '#' }
+    {
+      name: "Facebook",
+      icon: <FiFacebook size={20} />,
+      href: "https://www.facebook.com/profile.php?id=61576860749926",
+    },
+    { name: "Twitter", icon: <FiTwitter size={20} />, href: "#" },
   ];
 
   return (
@@ -58,7 +45,11 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Logo color="text-white" />
             <p className="mt-4 text-gray-400 max-w-xs">
-              Revolutionizing onion storage management with cutting-edge tagging and tracking technology.
+              <b>OnioNet is building smarter ways to track and store onions.</b>
+              <p>
+                Backed by early partners and designed for real farm-to-storage
+                problems.
+              </p>
             </p>
             <div className="flex space-x-4 mt-6">
               {socialLinks.map((link, index) => (

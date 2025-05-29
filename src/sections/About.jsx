@@ -72,9 +72,8 @@ const About = () => {
             post-harvest losses.
           </p>
         </motion.div>
-
         {/* Problem-Solution */}
-        <div className="flex flex-col lg:flex-row gap-12 items-center mb-20">
+        <div className="flex flex-col lg:flex-row gap-12 items-start mb-20">
           <motion.div
             className="lg:w-1/2"
             initial={{ opacity: 0, x: -20 }}
@@ -167,7 +166,93 @@ const About = () => {
           </motion.div>
         </div>
 
+        {/* Tag. Track. Thrive. Section */}
+        <section className="section bg-white text-center">
+          <div className="container-custom">
+            <h2 className="text-3xl font-bold mb-6">Tag. Track. Thrive.</h2>
+            <p className="text-gray-600 mb-10 max-w-2xl mx-auto">
+              OnioNet simplifies the entire cold storage process in 3 essential
+              steps: tagging every bag, tracking every movement, and helping
+              facilities and farmers thrive through smart monitoring and
+              insights.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Tag */}
+              <motion.div
+                className="bg-white shadow-md rounded-xl overflow-hidden p-4"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                <img
+                  src="/src/assets/tag.png"
+                  alt="Tagging system"
+                  className="w-full h-auto mb-4"
+                />
+                <h4 className="font-semibold text-lg">Tag</h4>
+                <p className="text-gray-600 text-sm">
+                  QR code tags are clipped to each bag for identity and
+                  traceability.
+                </p>
+              </motion.div>
+
+              {/* Track */}
+              <motion.div
+                className="bg-white shadow-md rounded-xl overflow-hidden p-4"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <img
+                  src="/src/assets/track.png"
+                  alt="Tracking system"
+                  className="w-full h-auto mb-4"
+                />
+                <h4 className="font-semibold text-lg">Track</h4>
+                <p className="text-gray-600 text-sm">
+                  Bags are scanned on entry and exit to record real-time
+                  movement and bag history.
+                </p>
+              </motion.div>
+
+              {/* Thrive */}
+              <motion.div
+                className="bg-white shadow-md rounded-xl overflow-hidden p-4"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                <img
+                  src="/src/assets/thrive.png"
+                  alt="Thrive with analytics"
+                  className="w-full h-auto mb-4"
+                />
+                <h4 className="font-semibold text-lg">Thrive</h4>
+                <p className="text-gray-600 text-sm">
+                  Facilities gain insights, reduce waste, and farmers receive
+                  SMS alerts to make informed decisions.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        <br />
         {/* Features Grid */}
+        <div className="text-center mb-12 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4">
+            What <span className="text-purple-700">OnioNet</span> Offers
+          </h2>
+          <p className="text-gray-600">
+            Each feature is designed to simplify your workflow and maximize your
+            storage’s potential — from real-time tracking to automated
+            reporting.
+          </p>
+        </div>
         <motion.div
           variants={containerVariants}
           initial="hidden"
