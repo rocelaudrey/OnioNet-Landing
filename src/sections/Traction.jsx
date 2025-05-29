@@ -174,17 +174,17 @@ const Traction = () => {
             {/* Logos */}
             <div className="flex flex-wrap justify-center items-center gap-8">
               <img
-                src="/src/assets/birdc.jpg"
+                src="/assets/birdc.jpg"
                 alt="BIRD-C Logo"
                 className="w-[150px] h-[150px] object-contain border border-white rounded-xl"
               />
               <img
-                src="/src/assets/ttbdo.jpg"
+                src="/assets/ttbdo.jpg"
                 alt="TTBDO Logo"
                 className="w-[150px] h-[150px] object-contain border border-white rounded-xl"
               />
               <img
-                src="/src/assets/yfc.jpg"
+                src="/assets/yfc.jpg"
                 alt="Young Farmers Challenge Logo"
                 className="w-[150px] h-[150px] object-contain border border-white rounded-xl"
               />
